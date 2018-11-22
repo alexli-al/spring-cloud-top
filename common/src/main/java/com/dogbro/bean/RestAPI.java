@@ -1,14 +1,13 @@
 package com.dogbro.bean;
 
-import jdk.nashorn.internal.objects.annotations.Getter;
-import jdk.nashorn.internal.objects.annotations.Setter;
+import java.io.Serializable;
 
 /**
- * @description 接口同意返回数据结构
+ * @description 接口统一返回数据结构
  * @auther dogbro
  * @date 2018-11-19 16:42
  */
-public class RestAPI {
+public class RestAPI implements Serializable {
 
     public Integer code;
 
@@ -16,7 +15,7 @@ public class RestAPI {
 
     public Object data;
 
-    private  Object exp;
+    public Object exp;
 
     public RestAPI(){}
 
